@@ -121,7 +121,10 @@ Enable images and behavior.
 * `<style>` – Inline CSS
 
 
-
+### Homework 01:
+* Complete [Coursera Learning How To Learn](https://www.coursera.org/learn/learning-how-to-learn).
+* Watch [How to Study for Exams: Evidence-based revision Tips](https://youtu.be/ukLnPbIffxE?si=rc0A92Hg1GJ4hZRE) by Ali Abdaal.
+* Watch [How to study for Exams: Spaced repetition](https://youtu.be/Z-zNHHpXoMM?si=37sm3kWgh58wqPIM) by Ali Abdaal.
 
 
 

@@ -20,3 +20,7 @@ freelance job idea:
 `<form>` forms tag. `action` & `method` attributes.
 
 ### Progessive Enhancement
+
+
+Lab activity: code Khan Academy website.
+Homework 02: code BBC homepage.
