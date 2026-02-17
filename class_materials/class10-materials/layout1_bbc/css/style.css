@@ -1,0 +1,245 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+/* Images shouldn’t overflow their grid cell, global setting */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+margin: 0;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background-color: black;
+  color: white;
+}
+
+footer {
+
+}
+
+ul {
+  display: flex; /* Makes the ul a flex container */
+  list-style-type: none; /* Removes bullet points */
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 40px;
+}
+
+li {
+  padding: 10px;
+}
+
+ul li +li {
+  border-left: 1px solid white;
+}
+
+.longer {
+  width: 160px;
+}
+
+.tom {
+  display: flex;
+  justify-content: space-between; /* Pushes items to the ends */
+  width: 100%; /* Ensures the container spans the full width */
+  padding: 20px 0 10px 0;
+}
+
+.tom > span + span {
+  color: grey;
+}
+
+.container1 + span {
+  margin: 20px 0 10px 0;
+}
+
+#section_1 {
+  background-image: url(../images/image_1.png);
+
+  /* Center and scale the image nicely */
+  background-position: center; /* */
+  background-repeat: no-repeat; /* */
+  background-size: cover; 
+
+  /* Ensure the container has a defined height so the background image is visible */
+  height: 400px; 
+}
+
+#section_2 {
+  background-image: url(../images/image_2.png);
+
+  /* Center and scale the image nicely */
+  background-position: center; /* */
+  background-repeat: no-repeat; /* */
+  background-size: cover; 
+
+  /* Ensure the container has a defined height so the background image is visible */
+  height: 200px; 
+}
+
+#section_3 {
+  background-image: url(../images/image_3.png);
+
+  /* Center and scale the image nicely */
+  background-position: center; /* */
+  background-repeat: no-repeat; /* */
+  background-size: cover; 
+
+  /* Ensure the container has a defined height so the background image is visible */
+  height: 200px; 
+}
+
+#section_4 {
+  background-image: url(../images/image_4.png);
+
+  /* Center and scale the image nicely */
+  background-position: center; /* */
+  background-repeat: no-repeat; /* */
+  background-size: cover; 
+
+  /* Ensure the container has a defined height so the background image is visible */
+  height: 200px; 
+}
+
+#section_5 {
+  background-image: url(../images/image_5.png);
+
+  /* Center and scale the image nicely */
+  background-position: center; /* */
+  background-repeat: no-repeat; /* */
+  background-size: cover; 
+
+  /* Ensure the container has a defined height so the background image is visible */
+  height: 200px; 
+}
+
+h1 {
+    /* Style your text to ensure it is readable over the image */
+    font-size: 3rem;
+}
+
+.container1 * {
+  color: white;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+}
+
+.right-column-container {
+  display: grid;
+  /* Creates two columns and two rows of equal space within the right column */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+}
+
+.nested-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100vw;
+}
+
+@media (max-width: 900px) {
+  .container2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container1 {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .right-column-container {
+    grid-template-columns: 1fr;
+  }
+
+  .right-column-container > *:nth-child(n+3) {
+    display: none; /* hide 3rd and 4th items */
+  }
+  .hide_900 {
+    display: none;
+  }
+
+}
+
+@media (max-width: 750px) {
+  .hide_750 {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .container2 {
+    grid-template-columns: 1fr;
+  }
+
+  .container1 {
+    grid-template-columns: 1fr 0fr;
+  }
+
+  .right-column-container > * {
+    display: none; /* hide all items */
+  }
+
+  .hide_600 {
+    display: none;
+  }
+}
+
+.container1 h1, 
+.container1 p, 
+.container1 span, 
+.container1 h3 {
+  margin: 10px;
+}
+
+.highlight-span {
+  padding: 0px 10px;
+  border-left: 2px solid red;
+}
+
+
+span {
+  display: block;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
