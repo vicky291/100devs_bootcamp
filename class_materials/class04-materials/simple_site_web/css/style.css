@@ -1,0 +1,52 @@
+body {
+    border: 3px solid black;
+    padding: 10px 20px;   /* 10px top/bottom padding, 20px left/right padding */
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+}
+
+h2 {
+    font-style: bold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.container {
+    display: flex; /* Makes the container a flex container */
+    justify-content: center; /* Centers the ul horizontally within the container */
+}
+
+.navigation_bar {
+    display: flex;     /* Makes the list items arrange in a row */
+    list-style: none;   /* Removes default bullet points */
+    gap: 5px;         /* Adds space between items */
+    text-decoration: none; /* Removes underlines from links */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.navigation_bar li {
+    padding: 0 15px;       /* Adds horizontal spacing around the content */
+}
+
+.navigation_bar li:not(:first-child) {
+    border-left: 2px solid rgba(90, 90, 90, 0.8); /* Adds a left border to all but the first item */
+}
+
+.float-right {
+    float: right;
+    margin-left: 15px; /* Adds space between the image and the text */
+    max-width: 30%;   /* Ensures image is responsive and shrinks on small screens */
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.5; /* Sets line spacing to 1.6 times the font size for all paragraphs */
+}

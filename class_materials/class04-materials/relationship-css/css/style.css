@@ -1,0 +1,11 @@
+section h2{
+    color: blue;
+}
+
+section > h2{
+    background-color: gold;
+}
+
+section article h2{
+    text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+/* Please make the li's blue, underlined, 15px, and have a gray background */
+li {
+    color: blue;
+    text-decoration: underline;
+    font-size: 15px;
+    background-color: grey;
+}
+
+/* Please make this section have a height of 300px, a light purple background, a gold border that is 5px thick */
+section {
+    background-color: lightgray;
+    border: 5px solid gold;
+    height: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: gold;
+    font-size: 30px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+footer {
+    height: 300px;
+    width: 70%;
+    background-color: rgba(92, 64, 51, 1);
+}
+
+h2 {
+    text-decoration: line-through;
+}
